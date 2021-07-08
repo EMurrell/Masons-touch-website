@@ -125,10 +125,13 @@ export default function Hero() {
                 FREE ESTIMATES
               </p>
               <div className="sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <p className="text-4xl font-bold tracking-tight text-yellow-600 sm:text-5xl md:text-6xl">
+                <p className="text-3xl font-bold tracking-tight text-yellow-600 md:text-5xl ">
                   613-304-3952
                 </p>
               </div>
+              <button className="px-4 py-2 mt-8 font-bold text-white bg-yellow-600 rounded hover:bg-yellow-700">
+                <a href="tel:+1-613-304-3952">CALL NOW</a>
+              </button>
             </div>
           </main>
         </div>
