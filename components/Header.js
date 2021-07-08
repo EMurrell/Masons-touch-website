@@ -3,10 +3,11 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import FadeIn from "./FadeIn";
 
 const navigation = [
   { name: "About", href: "#About" },
-  { name: "Work", href: "#Work" },
+
   { name: "Contact Us", href: "#" },
 ];
 
@@ -40,7 +41,7 @@ export default function Hero() {
                           <img className="w-20 h-20 sm:h-20" src="logo.png" />
                         </a>
                         <div className="flex items-center -mr-2 md:hidden">
-                          <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md ">
+                          <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-600 bg-white rounded-md focus:outline-none">
                             <span className="sr-only">Open main menu</span>
                             <MenuIcon className="w-6 h-6" aria-hidden="true" />
                           </Popover.Button>
@@ -52,7 +53,7 @@ export default function Hero() {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="font-medium text-gray-500 hover:text-gray-900"
+                          className="font-medium text-gray-600 hover:text-gray-900"
                         >
                           {item.name}
                         </a>
@@ -86,7 +87,7 @@ export default function Hero() {
                           />
                         </div>
                         <div className="-mr-2">
-                          <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                          <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 focus:outline-none">
                             <span className="sr-only">Close main menu</span>
                             <XIcon className="w-6 h-6 " aria-hidden="true" />
                           </Popover.Button>
@@ -94,13 +95,18 @@ export default function Hero() {
                       </div>
                       <div className="px-2 pt-2 pb-3 space-y-1">
                         {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                          <Popover.Button
+                            className="block"
+                            onClick={() => (open = false)}
                           >
-                            {item.name}
-                          </a>
+                            <a
+                              key={item.name}
+                              href={item.href}
+                              className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                            >
+                              {item.name}
+                            </a>
+                          </Popover.Button>
                         ))}
                       </div>
                     </div>
@@ -111,27 +117,29 @@ export default function Hero() {
           </Popover>
 
           <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div className="text-center lg:text-left">
-              <h1 className="text-2xl font-bold tracking-tighter text-gray-700 md:text-3xl">
-                <span className="block xl:inline">MASON'S TOUCH</span>{" "}
-                <span className="block text-gray-700 xl:inline">
-                  CONSTRUCTION
-                </span>
-              </h1>
-              <p className="mt-3 text-4xl font-extrabold tracking-tight text-gray-700 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-6xl lg:mx-0">
-                MASONRY AND FOUNDATION REPAIR
-              </p>
-              <p className="py-6 mt-2 text-xl font-bold text-yellow-600 md:text-3xl sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                FREE ESTIMATES
-              </p>
-              <div className="sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <p className="text-3xl font-bold tracking-tight text-yellow-600 md:text-5xl ">
-                  613-304-3952
+            <div className="text-center lg:ml-4 lg:text-left">
+              <FadeIn>
+                <h1 className="text-2xl font-bold tracking-tighter text-gray-700 md:text-3xl">
+                  <span className="block xl:inline">MASON'S TOUCH</span>{" "}
+                  <span className="block text-gray-700 xl:inline">
+                    CONSTRUCTION
+                  </span>
+                </h1>
+                <p className="mt-3 text-4xl font-extrabold tracking-tight text-gray-700 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-6xl lg:mx-0">
+                  MASONRY AND FOUNDATION REPAIR
                 </p>
-              </div>
-              <button className="px-4 py-2 mt-8 font-bold text-white bg-yellow-600 rounded hover:bg-yellow-700">
-                <a href="tel:+1-613-304-3952">CALL NOW</a>
-              </button>
+                <p className="py-6 mt-2 text-xl font-bold text-yellow-600 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                  FREE ESTIMATES
+                </p>
+                <div className="mt-4 sm:flex sm:justify-center lg:justify-start">
+                  <p className="text-3xl font-bold tracking-tight text-yellow-600 md:text-5xl ">
+                    613-304-3952
+                  </p>
+                </div>
+                <button className="px-4 py-2 mt-8 font-bold text-white bg-yellow-600 rounded shadow-md hover:bg-yellow-700">
+                  <a href="tel:+1-613-304-3952">CALL NOW</a>
+                </button>
+              </FadeIn>
             </div>
           </main>
         </div>

@@ -1,0 +1,5 @@
+default function Contact () {
+    return(
+        
+    )
+}

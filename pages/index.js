@@ -1,8 +1,10 @@
 import Head from "next/head";
-import Hero from "../components/Hero.js";
-import About from "../components/About.js";
-import Work from "../components/Work.js";
-import Footer from "../components/Footer.js";
+import Header from "../components/Header";
+import About from "../components/About";
+import Work from "../components/Work";
+import Footer from "../components/Footer";
+import Work2 from "../components/Work2";
+import Work3 from "../components/Work3";
 
 export default function Home() {
   return (
@@ -12,11 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <Hero />
+      <Header />
 
       <About />
 
-      <Work />
+      <Work3 />
 
       <Footer />
     </div>
