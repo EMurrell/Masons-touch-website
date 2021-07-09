@@ -3,7 +3,7 @@ export default function Footer() {
     return new Date().getFullYear();
   };
   return (
-    <footer className="flex items-center justify-center w-full h-24 bg-gray-700 ">
+    <footer className="flex items-center justify-center w-full h-24 bg-gray-600 ">
       <a
         className="flex items-center justify-center font-semibold tracking-wide text-white "
         href="#"

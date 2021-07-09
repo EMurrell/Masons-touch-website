@@ -8,7 +8,7 @@ import FadeIn from "./FadeIn";
 const navigation = [
   { name: "About", href: "#About" },
 
-  { name: "Contact Us", href: "#" },
+  { name: "Contact Us", href: "#Contact" },
 ];
 
 export default function Hero() {

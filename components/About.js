@@ -36,11 +36,11 @@ export default function About() {
             <p className="mt-2 text-2xl font-bold leading-8 tracking-tight text-gray-700 md:text-3xl">
               OVER 20 YEARS EXPERIENCE
             </p>
-            <p className="max-w-4xl mt-4 text-lg font-semibold text-gray-700 md:text-xl lg:mx-auto">
+            <p className="max-w-4xl mt-4 text-xl font-semibold text-gray-700 md:text-xl lg:mx-auto">
               Specializing in Foundation Repair, Parging, Chimney Repair, Stone
               Work and Brick Laying.
             </p>
-            <p className="max-w-2xl mt-4 text-base font-semibold text-gray-700 md:text-lg lg:mx-auto">
+            <p className="max-w-2xl mt-4 text-lg font-semibold text-gray-700 md:text-lg lg:mx-auto">
               Family Owned and Operated. Servicing Ottawa and surrounding
               region.
             </p>
@@ -54,7 +54,7 @@ export default function About() {
                     <div className="absolute flex items-center justify-center w-12 h-12 text-yellow-600 bg-white rounded-md">
                       <feature.icon className="w-6 h-6 " aria-hidden="true" />
                     </div>
-                    <p className="ml-16 text-lg font-medium leading-6 text-gray-800">
+                    <p className="ml-16 text-xl font-medium leading-6 text-gray-800">
                       {feature.name}
                     </p>
                   </dt>
