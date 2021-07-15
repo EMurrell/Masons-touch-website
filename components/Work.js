@@ -4,7 +4,7 @@ export default function Work3() {
   return (
     <section className="text-gray-700 ">
       <FadeIn>
-        <div className="container px-5 py-24 mx-auto bg-white">
+        <div className="container px-5 py-10 mx-auto bg-white">
           <div className="flex flex-wrap -mx-4 -mb-10 text-center ">
             <div className="px-4 mb-10 sm:w-1/2">
               <div className="h-64 overflow-hidden rounded-md">
