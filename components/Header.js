@@ -131,13 +131,9 @@ export default function Hero() {
                 <p className="py-6 mt-2 text-xl font-bold text-yellow-600 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   FREE ESTIMATES
                 </p>
-                <div className="mt-4 sm:flex sm:justify-center lg:justify-start">
-                  <p className="text-3xl font-bold tracking-tight text-yellow-600 md:text-5xl ">
-                    613-304-3952
-                  </p>
-                </div>
-                <button className="px-4 py-2 mt-8 font-bold text-white bg-yellow-600 rounded shadow-md hover:bg-yellow-700">
-                  <a href="tel:+1-613-304-3952">CALL NOW</a>
+
+                <button className="px-4 py-2 mt-4 font-bold text-white bg-yellow-600 rounded shadow-md hover:bg-yellow-700">
+                  <a href="#Contact">CONTACT US</a>
                 </button>
               </FadeIn>
             </div>
