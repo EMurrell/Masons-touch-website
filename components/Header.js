@@ -13,7 +13,7 @@ const navigation = [
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden bg-white font-body">
+    <div className="relative overflow-hidden tracking-tight font-body">
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
@@ -123,24 +123,24 @@ export default function Hero() {
           </Popover>
 
           <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div className="text-center lg:ml-4 lg:text-left">
-              <FadeIn>
-                <h1 className="text-2xl font-bold tracking-tighter text-gray-900 md:text-3xl">
+            <FadeIn>
+              <div className="text-center lg:ml-4 lg:text-left">
+                <h1 className="text-xl font-bold text-gray-900 md:text-2xl lg:text-3xl lg:pt-6">
                   <span className="block xl:inline">MASON'S TOUCH</span>{" "}
                   <span className="block xl:inline">CONSTRUCTION</span>
                 </h1>
-                <p className="mt-3 text-4xl font-extrabold tracking-tight text-gray-900 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-6xl lg:mx-0">
+                <p className="mt-3 text-3xl font-extrabold text-gray-900 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-5xl lg:text-6xl lg:mx-0">
                   MASONRY AND FOUNDATION REPAIR
                 </p>
-                <p className="py-6 mt-2 text-xl font-bold text-yellow-600 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                <p className="py-6 text-xl font-bold text-yellow-600 sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl lg:text-3xl lg:mx-0">
                   FREE ESTIMATES
                 </p>
 
-                <button className="px-4 py-2 mt-4 font-bold text-white transition duration-200 ease-in-out transform bg-yellow-600 rounded shadow-md cursor-pointer hover:scale-105 hover:bg-yellow-700">
+                <button className="px-4 py-2 mt-2 text-xl font-bold text-white transition duration-200 ease-in-out transform bg-yellow-600 rounded shadow-md cursor-pointer lg:mt-4 hover:scale-105 hover:bg-yellow-700">
                   <a href="#Contact">CONTACT US</a>
                 </button>
-              </FadeIn>
-            </div>
+              </div>
+            </FadeIn>
           </main>
         </div>
       </div>
