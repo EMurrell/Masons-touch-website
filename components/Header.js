@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 import FadeIn from "./FadeIn";
 
 const navigation = [
-  { name: "About", href: "#About" },
+  { name: "ABOUT", href: "#About", id: 1 },
 
-  { name: "Contact Us", href: "#Contact" },
+  { name: "CONTACT", href: "#Contact", id: 2 },
 ];
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden bg-white">
+    <div className="relative overflow-hidden bg-white font-body">
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
@@ -41,9 +41,12 @@ export default function Hero() {
                           <img className="w-20 h-20 sm:h-20" src="logo.png" />
                         </a>
                         <div className="flex items-center -mr-2 md:hidden">
-                          <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-600 bg-white rounded-md focus:outline-none">
+                          <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-900 bg-white rounded-md focus:outline-none">
                             <span className="sr-only">Open main menu</span>
-                            <MenuIcon className="w-6 h-6" aria-hidden="true" />
+                            <MenuIcon
+                              className="w-10 h-10"
+                              aria-hidden="true"
+                            />
                           </Popover.Button>
                         </div>
                       </div>
@@ -53,7 +56,7 @@ export default function Hero() {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="font-medium text-gray-600 hover:text-gray-900"
+                          className="font-bold text-gray-900 hover:text-gray-700"
                         >
                           {item.name}
                         </a>
@@ -77,7 +80,7 @@ export default function Hero() {
                     static
                     className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden"
                   >
-                    <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
+                    <div className="overflow-hidden bg-white rounded-lg shadow-md ">
                       <div className="flex items-center justify-between px-5 pt-4">
                         <div>
                           <img
@@ -86,10 +89,13 @@ export default function Hero() {
                             alt="logo"
                           />
                         </div>
-                        <div className="-mr-2">
-                          <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 focus:outline-none">
+                        <div className="-mr-4">
+                          <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-900 bg-white rounded-md hover:text-gray-500 focus:outline-none">
                             <span className="sr-only">Close main menu</span>
-                            <XIcon className="w-6 h-6 " aria-hidden="true" />
+                            <XIcon
+                              className="w-10 h-10 mt-4"
+                              aria-hidden="true"
+                            />
                           </Popover.Button>
                         </div>
                       </div>
@@ -102,7 +108,7 @@ export default function Hero() {
                             <a
                               key={item.name}
                               href={item.href}
-                              className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                              className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:text-gray-900 hover:bg-gray-50"
                             >
                               {item.name}
                             </a>
@@ -119,20 +125,18 @@ export default function Hero() {
           <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="text-center lg:ml-4 lg:text-left">
               <FadeIn>
-                <h1 className="text-2xl font-bold tracking-tighter text-gray-700 md:text-3xl">
+                <h1 className="text-2xl font-bold tracking-tighter text-gray-900 md:text-3xl">
                   <span className="block xl:inline">MASON'S TOUCH</span>{" "}
-                  <span className="block text-gray-700 xl:inline">
-                    CONSTRUCTION
-                  </span>
+                  <span className="block xl:inline">CONSTRUCTION</span>
                 </h1>
-                <p className="mt-3 text-4xl font-extrabold tracking-tight text-gray-700 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-6xl lg:mx-0">
+                <p className="mt-3 text-4xl font-extrabold tracking-tight text-gray-900 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-6xl lg:mx-0">
                   MASONRY AND FOUNDATION REPAIR
                 </p>
                 <p className="py-6 mt-2 text-xl font-bold text-yellow-600 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   FREE ESTIMATES
                 </p>
 
-                <button className="px-4 py-2 mt-4 font-bold text-white bg-yellow-600 rounded shadow-md hover:bg-yellow-700">
+                <button className="px-4 py-2 mt-4 font-bold text-white transition duration-200 ease-in-out transform bg-yellow-600 rounded shadow-md cursor-pointer hover:scale-105 hover:bg-yellow-700">
                   <a href="#Contact">CONTACT US</a>
                 </button>
               </FadeIn>

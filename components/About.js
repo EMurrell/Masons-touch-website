@@ -29,18 +29,18 @@ const features = [
 
 export default function About() {
   return (
-    <div id="About" className="py-10 mt-8 ">
+    <div id="About" className="py-10 mt-8 font-semibold text-gray-900">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <FadeIn>
           <div className="lg:text-center">
-            <p className="mt-2 text-2xl font-bold leading-8 tracking-tight text-gray-700 md:text-3xl">
+            <p className="mt-2 text-2xl font-bold leading-8 md:text-3xl">
               OVER 20 YEARS EXPERIENCE
             </p>
-            <p className="max-w-4xl mt-4 text-xl font-semibold text-gray-700 md:text-xl lg:mx-auto">
+            <p className="max-w-4xl mt-4 text-xl font-semibold md:text-xl lg:mx-auto">
               Specializing in Foundation Repair, Parging, Chimney Repair, Stone
               Work and Brick Laying.
             </p>
-            <p className="max-w-2xl mt-4 text-lg font-semibold text-gray-700 md:text-lg lg:mx-auto">
+            <p className="max-w-2xl mt-4 text-lg font-semibold md:text-lg lg:mx-auto">
               Family Owned and Operated. Servicing Ottawa and surrounding
               region.
             </p>
@@ -52,15 +52,11 @@ export default function About() {
                 <div key={feature.name} className="relative">
                   <dt>
                     <div className="absolute flex items-center justify-center w-12 h-12 text-yellow-600 bg-white rounded-md">
-                      <feature.icon className="w-6 h-6 " aria-hidden="true" />
+                      <feature.icon className="w-10 h-10 " aria-hidden="true" />
                     </div>
-                    <p className="ml-16 text-xl font-medium leading-6 text-gray-800">
-                      {feature.name}
-                    </p>
+                    <p className="ml-16 text-xl font-bold ">{feature.name}</p>
                   </dt>
-                  <dd className="mt-2 ml-16 text-base text-gray-700">
-                    {feature.description}
-                  </dd>
+                  <dd className="mt-2 ml-16 ">{feature.description}</dd>
                 </div>
               ))}
             </dl>
