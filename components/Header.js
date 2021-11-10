@@ -121,9 +121,8 @@ export default function Hero() {
               </>
             )}
           </Popover>
-
-          <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <FadeIn>
+          <FadeIn>
+            <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="text-center lg:ml-4 lg:text-left">
                 <h1 className="text-xl font-bold text-gray-900 md:text-2xl lg:text-3xl lg:pt-6">
                   <span className="block xl:inline">MASON'S TOUCH</span>{" "}
@@ -140,8 +139,8 @@ export default function Hero() {
                   <a href="#Contact">CONTACT US</a>
                 </button>
               </div>
-            </FadeIn>
-          </main>
+            </main>
+          </FadeIn>
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
