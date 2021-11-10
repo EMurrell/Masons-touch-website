@@ -11,7 +11,7 @@ const navigation = [
   { name: "CONTACT", href: "#Contact", id: 2 },
 ];
 
-export default function Hero() {
+export default function Header() {
   return (
     <div className="relative overflow-hidden tracking-tight font-body">
       <div className="mx-auto max-w-7xl">
@@ -54,7 +54,7 @@ export default function Hero() {
                     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                       {navigation.map((item) => (
                         <a
-                          key={item.name}
+                          key={item.id}
                           href={item.href}
                           className="font-bold text-gray-900 hover:text-gray-700"
                         >
@@ -106,7 +106,7 @@ export default function Hero() {
                             onClick={() => (open = false)}
                           >
                             <a
-                              key={item.name}
+                              key={item.id}
                               href={item.href}
                               className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:text-gray-900 hover:bg-gray-50"
                             >

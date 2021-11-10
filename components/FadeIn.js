@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 
 function FadeIn({ children }) {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.4 });
+  const [ref, inView] = useInView();
 
   useEffect(() => {
     if (inView) {
@@ -17,7 +17,7 @@ function FadeIn({ children }) {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ delay: 0.1, type: "spring", stiffness: 50 }}
+      transition={{ delay: 0.1, type: "spring", stiffness: 40 }}
       variants={{
         visible: { opacity: 1, scale: 1, y: 0 },
         hidden: { opacity: 0, scale: 1, y: 30 },
