@@ -31,22 +31,22 @@ export default function Contact() {
           </div>
 
           <div className="my-12 font-semibold">
-            <dl className="space-y-10 md:space-x-24 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <div className="space-y-10 md:space-x-24 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
               {features.map((feature) => (
                 <div key={feature.name} className="">
-                  <dt>
+                  <div>
                     <div className="absolute flex items-center justify-center w-12 h-12 text-yellow-600 rounded-md">
                       <feature.icon className="w-6 h-6 " aria-hidden="true" />
                     </div>
                     <p className="ml-16 text-xl ">{feature.name}</p>
-                  </dt>
-                  <dd className="mt-2 ml-16 text-lg ">{feature.description}</dd>
-                  <button className="px-4 py-2 mt-8 ml-16 font-bold text-white transition duration-200 ease-in-out transform bg-yellow-600 rounded shadow-md cursor-pointer hover:bg-yellow-700 hover:scale-105">
+                  </div>
+                  <p className="mt-2 ml-16 text-lg ">{feature.description}</p>
+                  <button className="px-6 py-2 mt-8 ml-16 font-medium text-white transition duration-200 ease-in-out transform bg-yellow-600 shadow-md cursor-pointer rounded-3xl hover:bg-yellow-700 hover:scale-105">
                     <a href={feature.href}>{feature.button}</a>
                   </button>
                 </div>
               ))}
-            </dl>
+            </div>
           </div>
         </FadeIn>
       </div>

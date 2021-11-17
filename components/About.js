@@ -47,19 +47,19 @@ export default function About() {
           </div>
 
           <div className="my-12">
-            <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
               {features.map((feature) => (
                 <div key={feature.name} className="relative">
-                  <dt>
+                  <div>
                     <div className="absolute flex items-center justify-center w-12 h-12 text-yellow-600 bg-white rounded-md">
                       <feature.icon className="w-10 h-10 " aria-hidden="true" />
                     </div>
                     <p className="ml-16 text-xl font-bold ">{feature.name}</p>
-                  </dt>
-                  <dd className="mt-2 ml-16 ">{feature.description}</dd>
+                  </div>
+                  <p className="mt-2 ml-16 ">{feature.description}</p>
                 </div>
               ))}
-            </dl>
+            </div>
           </div>
         </FadeIn>
       </div>

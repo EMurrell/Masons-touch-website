@@ -13,7 +13,7 @@ const navigation = [
 
 export default function Header() {
   return (
-    <div className="relative overflow-hidden tracking-tight font-body">
+    <div className="relative overflow-hidden font-body">
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
@@ -38,13 +38,17 @@ export default function Header() {
                       <div className="flex items-center justify-between w-full md:w-auto">
                         <a href="#">
                           <span className="sr-only">MTC</span>
-                          <img className="w-20 h-20 sm:h-20" src="logo.png" />
+                          <img
+                            className="w-16 h-16 "
+                            src="logo.png"
+                            alt=" m.t.c. logo"
+                          />
                         </a>
                         <div className="flex items-center -mr-2 md:hidden">
                           <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-900 bg-white rounded-md focus:outline-none">
                             <span className="sr-only">Open main menu</span>
                             <MenuIcon
-                              className="w-10 h-10"
+                              className="w-12 h-12"
                               aria-hidden="true"
                             />
                           </Popover.Button>
@@ -80,20 +84,20 @@ export default function Header() {
                     static
                     className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden"
                   >
-                    <div className="overflow-hidden bg-white rounded-lg shadow-md ">
+                    <div className="overflow-hidden bg-gray-300 rounded-lg shadow-md ">
                       <div className="flex items-center justify-between px-5 pt-4">
                         <div>
                           <img
-                            className="w-auto h-8"
+                            className="w-16 h-16"
                             src="logo.png"
                             alt="logo"
                           />
                         </div>
                         <div className="-mr-4">
-                          <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-900 bg-white rounded-md hover:text-gray-500 focus:outline-none">
+                          <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-900 bg-white bg-gray-300 rounded-md hover:text-gray-500 focus:outline-none">
                             <span className="sr-only">Close main menu</span>
                             <XIcon
-                              className="w-10 h-10 mt-4"
+                              className="w-12 h-12 mt-2 bg-gray-300"
                               aria-hidden="true"
                             />
                           </Popover.Button>
@@ -108,7 +112,7 @@ export default function Header() {
                             <a
                               key={item.id}
                               href={item.href}
-                              className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                              className="block px-3 py-4 text-lg font-bold text-gray-900 rounded-md hover:text-gray-900 hover:bg-gray-50"
                             >
                               {item.name}
                             </a>
@@ -124,18 +128,18 @@ export default function Header() {
           <FadeIn>
             <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="text-center lg:ml-4 lg:text-left">
-                <h1 className="text-xl font-bold text-gray-900 md:text-2xl lg:text-3xl lg:pt-6">
+                <h1 className="text-xl font-extrabold text-gray-900 md:text-2xl lg:text-3xl lg:pt-6">
                   <span className="block xl:inline">MASON'S TOUCH</span>{" "}
                   <span className="block xl:inline">CONSTRUCTION</span>
                 </h1>
                 <p className="mt-3 text-3xl font-extrabold text-gray-900 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-5xl lg:text-6xl lg:mx-0">
                   MASONRY AND FOUNDATION REPAIR
                 </p>
-                <p className="py-6 text-xl font-bold text-yellow-600 sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl lg:text-3xl lg:mx-0">
+                <p className="py-8 text-xl font-extrabold text-yellow-600 sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl lg:text-3xl lg:mx-0">
                   FREE ESTIMATES
                 </p>
 
-                <button className="px-4 py-2 mt-2 text-xl font-bold text-white transition duration-200 ease-in-out transform bg-yellow-600 rounded shadow-md cursor-pointer lg:mt-4 hover:scale-105 hover:bg-yellow-700">
+                <button className="px-6 py-2 mt-2 text-xl font-medium text-white transition duration-200 ease-in-out transform bg-yellow-600 shadow-md cursor-pointer rounded-3xl lg:mt-4 hover:scale-105 hover:bg-yellow-700">
                   <a href="#Contact">CONTACT US</a>
                 </button>
               </div>

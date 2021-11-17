@@ -9,7 +9,7 @@ export default function Work3() {
             <div className="px-4 mb-10 sm:w-1/2">
               <div className="h-64 overflow-hidden rounded-md">
                 <img
-                  alt="content"
+                  alt="stone work"
                   className="object-cover object-center w-full h-full"
                   src="/house.jpg"
                 />
@@ -23,7 +23,7 @@ export default function Work3() {
             <div className="px-4 mb-10 sm:w-1/2">
               <div className="h-64 overflow-hidden rounded-md">
                 <img
-                  alt="content"
+                  alt="chimney"
                   className="object-cover object-center w-full h-full"
                   src="/chimney.jpg"
                 />
@@ -37,7 +37,7 @@ export default function Work3() {
             <div className="px-4 mb-10 sm:w-1/2">
               <div className="h-64 overflow-hidden rounded-md">
                 <img
-                  alt="content"
+                  alt="interlocking bricks"
                   className="object-cover object-center w-full h-full"
                   src="/interlock.jpg"
                 />
@@ -53,7 +53,7 @@ export default function Work3() {
             <div className="px-4 mb-10 sm:w-1/2">
               <div className="h-64 overflow-hidden rounded-md">
                 <img
-                  alt="content"
+                  alt="cracked foundation"
                   className="object-cover object-center w-full h-full"
                   src="/foundation.jpg"
                 />
